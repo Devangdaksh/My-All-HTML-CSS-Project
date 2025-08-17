@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Simple Flip Card</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 20px;
+      font-family: Arial, sans-serif;
+      background: #0b0f1a;
+      color: #e5e7eb;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .card-container {
+      width: 300px;
+      height: 400px;
+      position: relative;
+    }
+
+    .card {
+      width: 100%;
+      height: 100%;
+      position: relative;
+      transform-style: preserve-3d;
+      transition: transform 0.6s;
+      cursor: pointer;
+    }
+
+    .card.flipped {
+      transform: rotateY(180deg);
+    }
+
+    .card-side {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      backface-visibility: hidden;
+      border-radius: 15px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .card-front {
+      background: #0f172a;
+      border: 2px solid #60a5fa;
+    }
+
+    .card-back {
+      background: #60a5fa;
+      color: white;
+      transform: rotateY(180deg);
+    }
+
+    .title {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+
+    .description {
+      font-size: 16px;
+      color: #94a3b8;
+      margin-bottom: 20px;
+    }
+
+    .card-back .description {
+      color: white;
+    }
+
+    .button {
+      background: #60a5fa;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 14px;
+    }
+
+    .card-back .button {
+      background: white;
+      color: #60a5fa;
+    }
+
+    .instruction {
+      margin-top: 20px;
+      color: #94a3b8;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <div class="card-container">
+    <div class="card" id="flipCard">
+      <div class="card-side card-front">
+        <h2 class="title">3D Animation Card</h2>
+        <p class="description">This is the front of my card. Tap me to see the back!</p>
+        <button class="button">Click Me</button>
+      </div>
+      
+      <div class="card-side card-back">
+        <h2 class="title">Back Side!</h2>
+        <p class="description">Welcome to the back side of the card. Pretty cool, right?</p>
+        <button class="button">Go Back</button>
+      </div>
+    </div>
+    <p class="instruction">Tap the card to flip it!</p>
+  </div>
+
+  <script>
+    const card = document.getElementById('flipCard');
+    
+    card.addEventListener('click', function() {
+      card.classList.toggle('flipped');
+    });
+  </script>
+</body>
+</html>
