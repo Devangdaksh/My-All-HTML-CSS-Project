@@ -9,10 +9,13 @@ Tap or hover to reveal the back and explore engaging UI design, modern gradients
 
 Below are real screenshots of the 3D cards:
 
-![Advanced 3D Card - Back Side](attached_image:3)
-![Basic 3D Card - Front](attached_image:4)
-![Basic 3D Card - Back](attached_image:5)
-![Advanced 3D Card - Front](attached_image:6)
+![Advanced 3D Card - Front](https://github.com/Devangdaksh/My-All-HTML-CSS-Project/blob/17ca2839d36ca999d9f43caf913501c6adb13b6e/3D%20Card%20Animation/readme%20using%20pic/Capture.PNG)
+
+![Advanced 3D Card - Back Side](https://github.com/Devangdaksh/My-All-HTML-CSS-Project/blob/17ca2839d36ca999d9f43caf913501c6adb13b6e/3D%20Card%20Animation/readme%20using%20pic/Capture1.PNG)
+
+![Basic 3D Card - Front](https://github.com/Devangdaksh/My-All-HTML-CSS-Project/blob/17ca2839d36ca999d9f43caf913501c6adb13b6e/3D%20Card%20Animation/readme%20using%20pic/Capture3.PNG)
+
+![Basic 3D Card - Back](https://github.com/Devangdaksh/My-All-HTML-CSS-Project/blob/17ca2839d36ca999d9f43caf913501c6adb13b6e/3D%20Card%20Animation/readme%20using%20pic/Capture4.PNG)
 
 ---
 
