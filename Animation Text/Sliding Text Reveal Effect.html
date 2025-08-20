@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<style>
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+  }
+  .slide-reveal {
+    font-size: 40px;
+    font-weight: bold;
+    position: relative;
+    color: black;
+    overflow: hidden;
+  }
+  .slide-reveal::before {
+    content: attr(data-text);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+    transform: translateX(0);
+    animation: slide 2s forwards;
+    z-index: 2;
+  }
+  @keyframes slide {
+    100% {
+      transform: translateX(100%);
+    }
+  }
+</style>
+<title>Sliding Text Reveal</title>
+</head>
+<body>
+  
+
+<div class="slide-reveal" data-text="Sliding Reveal Text">Wait For Reveal Text</div>
+
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Simple Card Hover Effect</title>
+<style>
+  body {
+    margin: 0;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background: #0b0f1a;
+    color: #e5e7eb;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card {
+    width: min(90vw, 380px);
+    height: 520px;
+    border-radius: 26px;
+    background: linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0.02));
+    border: 1px solid rgba(255,255,255,0.08);
+    box-shadow: 0 20px 60px rgba(2, 6, 23, 0.45), inset 0 0 0 1px rgba(255,255,255,0.04);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    transition: transform 0.3s cubic-bezier(.2,.8,.2,1), box-shadow 0.3s ease;
+    cursor: pointer;
+  }
+
+  .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 30px 80px rgba(14, 165, 233, 0.6), inset 0 0 0 1px rgba(255,255,255,0.1);
+    background: linear-gradient(160deg, #0ea5e9, #7c3aed);
+    color: white;
+  }
+
+  .title {
+    font-size: clamp(24px, 4vw, 32px);
+    font-weight: 800;
+    margin-bottom: 12px;
+  }
+
+  .sub {
+    font-size: 14px;
+    color: inherit;
+    max-width: 28ch;
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+
+<div class="card">
+  <div class="title">Card Hover Effect</div>
+  <div class="sub">Hover over this card to see the effect.</div>
+  <div class="sub">This card scales up with shadow and changes background on hover.</div>
+</div>
+
+</body>
+</html>

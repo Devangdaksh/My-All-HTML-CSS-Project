@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  .mirror-text {
+    font-size: 50px;
+    font-weight: bold;
+    color: #333;
+    position: relative;
+    width: max-content;
+  }
+  .mirror-text::after {
+    content: attr(data-text);
+    display: block;
+    font-weight: bold;
+    color: #666;
+    transform: scaleY(-1);
+    opacity: 0.4;
+    margin-top: 5px;
+    background: linear-gradient(to bottom, rgba(102,102,102,0.4), transparent);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+</style>
+<title>Mirror Text Effect</title>
+</head>
+<body>
+
+<div class="mirror-text" data-text="Mirror Me!">Mirror Me!</div>
+
+</body>
+</html>

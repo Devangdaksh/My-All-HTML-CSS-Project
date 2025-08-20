@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<style>
+  ul.feature-list {
+    list-style: none;
+    padding: 0;
+    max-width: 400px;
+    font-size: 20px;
+    font-family: Arial, sans-serif;
+  }
+
+  ul.feature-list li {
+    background: #f0f0f0;
+    margin-bottom: 12px;
+    padding: 15px;
+    border-radius: 8px;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeSlideUp 0.6s forwards;
+  }
+
+  ul.feature-list li:nth-child(1) {
+    animation-delay: 0.2s;
+  }
+
+  ul.feature-list li:nth-child(2) {
+    animation-delay: 0.5s;
+  }
+
+  ul.feature-list li:nth-child(3) {
+    animation-delay: 0.8s;
+  }
+
+  ul.feature-list li:nth-child(4) {
+    animation-delay: 1.1s;
+  }
+
+  @keyframes fadeSlideUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+</style>
+<title>Animated Feature List</title>
+</head>
+<body>
+
+<ul class="feature-list">
+  <li>Fast Performance</li>
+  <li>Responsive Design</li>
+  <li>SEO Friendly</li>
+  <li>24/7 Support</li>
+</ul>
+
+</body>
+</html>
