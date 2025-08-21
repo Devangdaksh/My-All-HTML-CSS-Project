@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Pure CSS GitHub Icon</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #eee;
+    }
+
+    .github-icon {
+      position: relative;
+      width: 120px;
+      height: 120px;
+      background-color: #181717;
+      border-radius: 50%;
+    }
+
+    /* Head */
+    .head {
+      position: absolute;
+      top: 35px;
+      left: 30px;
+      width: 60px;
+      height: 50px;
+      background-color: white;
+      border-radius: 50% 50% 40% 40%;
+      z-index: 2;
+    }
+
+    /* Ears */
+    .ear {
+      position: absolute;
+      top: 20px;
+      width: 20px;
+      height: 20px;
+      background-color: white;
+      transform: rotate(45deg);
+      z-index: 1;
+    }
+
+.ear.left {
+  left: 25px;
+  border-radius: 30% 0 0 30%;
+}
+
+    .ear.right {
+      right: 25px;
+      border-radius: 30% 30% 0 0;
+    }
+
+    /* Eyes */
+    .eye {
+      position: absolute;
+      top: 55px;
+      width: 6px;
+      height: 6px;
+      background-color: #181717;
+      border-radius: 50%;
+      z-index: 3;
+    }
+
+    .eye.left {
+      left: 45px;
+    }
+
+    .eye.right {
+      right: 45px;
+    }
+
+    /* Chin (bottom arc to suggest shape) */
+    .chin {
+      position: absolute;
+      bottom: 25px;
+      left: 35px;
+      width: 50px;
+      height: 20px;
+      background: white;
+      border-radius: 0 0 50% 50%;
+      z-index: 1;
+    }
+  </style>
+</head>
+<body>
+  <div class="github-icon">
+    <div class="ear left"></div>
+    <div class="ear right"></div>
+    <div class="head"></div>
+    <div class="eye left"></div>
+    <div class="eye right"></div>
+    <div class="chin"></div>
+  </div>
+</body>
+</html>
