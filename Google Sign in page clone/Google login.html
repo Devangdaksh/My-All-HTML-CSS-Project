@@ -1,0 +1,99 @@
+<!-- login.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>login – Google</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap">
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      background: #f2f2f2;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .container {
+      background: white;
+      padding: 40px 50px;
+      border-radius: 8px;
+      box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
+      max-width: 400px;
+      width: 100%;
+    }
+
+    .google-logo {
+      display: block;
+      margin: 0 auto 20px;
+      height: 40px;
+    }
+
+    h1 {
+      font-size: 24px;
+      margin-bottom: 8px;
+      text-align: center;
+    }
+
+    .info-text {
+      text-align: center;
+      font-size: 14px;
+      color: #5f6368;
+      margin-bottom: 20px;
+    }
+
+    input[type="email"],
+    input[type="password"] {
+      width: 100%;
+      padding: 14px;
+      margin-bottom: 20px;
+      border: 1px solid #dadce0;
+      border-radius: 4px;
+      font-size: 16px;
+    }
+
+    .next-btn {
+      background-color: #1a73e8;
+      color: white;
+      padding: 10px 24px;
+      border: none;
+      border-radius: 4px;
+      float: right;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .next-btn:hover {
+      background-color: #1967d2;
+    }
+
+    .footer {
+      clear: both;
+      font-size: 12px;
+      color: #5f6368;
+      margin-top: 40px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png" alt="Google" class="google-logo" />
+    <h1>login </h1>
+    <div class="info-text">
+      to continue to Google
+    </div>
+    <form action="#" method="POST">
+      <input type="email" name="email" placeholder="Email or phone" required />
+      <input type="password" name="password" placeholder="Enter your password" required />
+      <button type="submit" class="next-btn">Next</button>
+    </form>
+    <div class="footer">
+      Not your computer? Use Guest mode to sign in privately.
+    </div>
+  </div>
+</body>
+</html>
